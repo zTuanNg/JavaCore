@@ -33,9 +33,11 @@ public class Main {
         String[] arr = s.split(" ");
         s = "";
         for(String i : arr){
-            String str = i.trim();
-            s += i.substring(0,1).toUpperCase() + i.substring(1);
-            s += " ";
+            if(i != " "){
+                s += i.substring(0,1).toUpperCase() + i.substring(1).toLowerCase();
+                s += " ";
+            }
+
         }
 
         return s;
