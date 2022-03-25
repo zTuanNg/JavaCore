@@ -11,8 +11,7 @@ public class Main {
         String name = sc.nextLine();
 
         System.out.println("Enter your age: ");
-        String age_str = sc.nextLine();
-        int age = Integer.parseInt(age_str);
+        int age = Integer.parseInt(sc.nextLine());
 
         System.out.println("Enter your sex: ");
         String sex = sc.nextLine();
