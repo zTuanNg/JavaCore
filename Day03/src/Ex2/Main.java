@@ -13,9 +13,9 @@ public class Main {
         // Check String
         boolean check = checkPalindrome(s);
         if(check)
-            System.out.println("->TRUE : This is is a Palindrome");
+            System.out.println("=>TRUE : This is is a Palindrome string.");
         else
-            System.out.println("->FALSE: This isn't is a Palindrome");
+            System.out.println("=>FALSE: This is not is a Palindrome string.");
     }
 
     public static boolean checkPalindrome(String s){
@@ -24,9 +24,11 @@ public class Main {
         if(len %2 != 0)
             return false;
         else{
-            for(int i=0; i<len;i++){
+            for(int i=0; i<len/2;i++){
                 String s1 = String.valueOf(s.charAt(i));
                 String s2 = String.valueOf(s.charAt(s.length()-1-i));
+                System.out.println("s1"+s1);
+                System.out.println("s2"+s2);
                 if(!s1.equals(s2))
                     return false;
             }

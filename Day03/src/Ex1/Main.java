@@ -1,5 +1,4 @@
 package Ex1;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class Main {
             }
         }
         System.out.printf("--So lan ky tu 'e' xuat hien: %d\n",cnt);
-        System.out.print("--Index cua ky tu 'e' la: ");
-        System.out.println(lst_index);
+        System.out.println("--Index cua ky tu 'e' la: "+lst_index);
+
     }
 }
