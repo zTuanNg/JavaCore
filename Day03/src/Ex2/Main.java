@@ -20,19 +20,14 @@ public class Main {
 
     public static boolean checkPalindrome(String s){
         int len = s.length();
-
-        if(len %2 != 0)
-            return false;
-        else{
-            for(int i=0; i<len/2;i++){
-                String s1 = String.valueOf(s.charAt(i));
-                String s2 = String.valueOf(s.charAt(s.length()-1-i));
-                System.out.println("s1"+s1);
-                System.out.println("s2"+s2);
-                if(!s1.equals(s2))
-                    return false;
+        System.out.println(len/2);
+        for(int i=0; i<len/2;i++){
+            String s1 = String.valueOf(s.charAt(i));
+            String s2 = String.valueOf(s.charAt(s.length()-1-i));
+            if(!s1.equals(s2))
+                return false;
             }
-            return true;
-        }
+        return true;
+
     }
 }
