@@ -23,8 +23,5 @@ public class Ex6 {
             System.out.println("=>Invalid email");
     }
 
-    public static void checkPhoneNUmber(){
-        Scanner sc = new Scanner(System.in);
-        String s =
-    }
+
 }
