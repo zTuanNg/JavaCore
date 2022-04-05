@@ -1,12 +1,11 @@
+package Ex6;
+
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class Ex6 {
     public static void main(String[] args) {
-
         checkEmail();
-
-
     }
 
     public static void checkEmail(){
